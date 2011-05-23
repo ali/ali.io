@@ -1,0 +1,49 @@
+/* Spacing. */
+header, section, aside, footer, section>p{margin-bottom: 1.5em;}
+  
+body{
+  background: #FFF url("../img/noise.png");
+	width: 480px;
+	padding: 3em;
+	margin: 0 auto;
+	
+	font-family: Palatino, Bodoni, Georgia, "Times New Roman", Times, serif;
+	color: #444;
+	color: rgba(0,0,0,0.75);
+	font-size: 1.75em;
+	text-align: center;
+}
+
+#currently{
+	font-size: 0.9em;
+}
+
+/* Elsewhere */
+li{display: inline; text-transform: lowercase;}
+	li:after{content: ", ";}
+	
+
+/* Footer */
+footer{
+	display: none;
+}
+
+/* Links */
+a, a:visited{
+	color: #FF4500;
+	text-decoration: none;
+}
+
+	a:hover, a:focus{
+		text-decoration: underline;
+	}
+
+/* Headings */
+h1, h2{font-weight: bold;}
+	h1{font-size: 3.5em; font-weight: 700;}
+	h2{font-size: 1em; font-weight: 600; margin-bottom: 0.2em;}
+
+/* iPhone stuff */	
+@media screen and (max-device-width: 480px){
+	body{width: 90%; padding: 1em; font-size: 1em;}
+}
