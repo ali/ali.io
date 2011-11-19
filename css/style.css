@@ -21,6 +21,7 @@ body{
 /* Elsewhere */
 li{display: inline; text-transform: lowercase;}
 	li:after{content: ", ";}
+	li:last-child:after{content:"";}
 	
 
 /* Footer */
