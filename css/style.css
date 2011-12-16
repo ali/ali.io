@@ -1,8 +1,10 @@
 /* Spacing. */
 header, section, aside, footer, section>p{margin-bottom: 1.5em;}
-  
+
 body{
-  background: #FFF url("../img/noise.png");
+	/* Background stuff */
+  	background: url(../img/square_bg.png);
+
 	width: 480px;
 	padding: 3em;
 	margin: 0 auto;
