@@ -1,0 +1,3 @@
+[submodule "fonts/LigatureSymbols"]
+	path = fonts/LigatureSymbols
+	url = git://github.com/kudakurage/LigatureSymbols.git
