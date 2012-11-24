@@ -1,0 +1,46 @@
+/* Ligature Symbols
+   http://kudakurage.com/ligature_symbols/ */
+$ligature-symbols-dir: '../fonts/LigatureSymbols/';
+
+@font-face {
+  font-family: 'LigatureSymbols';
+  src: url('#{$ligature-symbols-dir}LigatureSymbols-2.09.eot');
+  src: url('#{$ligature-symbols-dir}LigatureSymbols-2.09.eot?#iefix') format('embedded-opentype'),
+       url('#{$ligature-symbols-dir}LigatureSymbols-2.09.woff') format('woff'),
+       url('#{$ligature-symbols-dir}LigatureSymbols-2.09.ttf') format('truetype'),
+       url('#{$ligature-symbols-dir}LigatureSymbols-2.09.svg#LigatureSymbols') format('svg');
+  src: url('#{$ligature-symbols-dir}LigatureSymbols-2.09.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin lsf {
+  font-family: 'LigatureSymbols';
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+@mixin lsf-icon {
+  &:before {
+    content:attr(title);
+    margin-right:0.3em;
+    font-size:130%;
+    @include lsf;
+  }
+}
+
+.lsf {
+  @include lsf;
+}
+
+.lsf-icon {
+  @include lsf-icon;
+}

@@ -1,0 +1,189 @@
+/* Main styles for ali.io */
+/* line 17, ../../../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* Ligature Symbols
+   http://kudakurage.com/ligature_symbols/ */
+@font-face {
+  font-family: 'LigatureSymbols';
+  src: url("../fonts/LigatureSymbols/LigatureSymbols-2.09.eot");
+  src: url("../fonts/LigatureSymbols/LigatureSymbols-2.09.eot?#iefix") format("embedded-opentype"), url("../fonts/LigatureSymbols/LigatureSymbols-2.09.woff") format("woff"), url("../fonts/LigatureSymbols/LigatureSymbols-2.09.ttf") format("truetype"), url("../fonts/LigatureSymbols/LigatureSymbols-2.09.svg#LigatureSymbols") format("svg");
+  src: url("../fonts/LigatureSymbols/LigatureSymbols-2.09.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 40, ../sass/_ligature_symbols.scss */
+.lsf {
+  font-family: 'LigatureSymbols';
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+/* line 32, ../sass/_ligature_symbols.scss */
+.lsf-icon:before {
+  content: attr(title);
+  margin-right: 0.3em;
+  font-size: 130%;
+  font-family: 'LigatureSymbols';
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+/* line 12, ../sass/screen.scss */
+body {
+  background: #161616;
+  color: #d8d8c2;
+  font: 150%/1.5 proxima-nova, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+/* line 18, ../sass/screen.scss */
+header h1 {
+  color: #fff;
+  font-size: 2em;
+  margin: 0.5em 0;
+  text-transform: lowercase;
+}
+
+/* line 25, ../sass/screen.scss */
+img, p {
+  margin-bottom: 1em;
+}
+
+/* line 29, ../sass/screen.scss */
+a {
+  color: #84c2ff;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in;
+  -moz-transition: color 0.2s ease-in;
+  -o-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
+}
+/* line 38, ../sass/screen.scss */
+a:hover {
+  color: #389cff;
+}
+
+/* line 43, ../sass/screen.scss */
+img {
+  width: 100%;
+  border: 1px solid #2f2f2f;
+  padding: 2px;
+}
+
+/* line 49, ../sass/screen.scss */
+header, footer {
+  text-align: center;
+}
+
+/* line 53, ../sass/screen.scss */
+#about {
+  width: 600px;
+  margin: 0 auto;
+}
+
+/* line 59, ../sass/screen.scss */
+#elsewhere {
+  float: right;
+  margin-left: 2em;
+}
+/* line 32, ../sass/_ligature_symbols.scss */
+#elsewhere li a:before {
+  content: attr(title);
+  margin-right: 0.3em;
+  font-size: 130%;
+  font-family: 'LigatureSymbols';
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+/* line 66, ../sass/screen.scss */
+footer {
+  display: none;
+}
