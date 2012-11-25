@@ -1,3 +1,4 @@
+@import "common";
 $gravatar: "http://www.gravatar.com/avatar/69b73085f8b2247cae956d2b6dbada2c?s=200";
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -19,6 +20,7 @@ $gravatar: "http://www.gravatar.com/avatar/69b73085f8b2247cae956d2b6dbada2c?s=20
   }
 
   #elsewhere {
+    margin-top: 1.5em;
     clear: both;
 
     h2, ul li {
@@ -31,15 +33,23 @@ $gravatar: "http://www.gravatar.com/avatar/69b73085f8b2247cae956d2b6dbada2c?s=20
 
     li a {
       font-size: 0;
-      &:before { font-size: 2rem; }
+      &:before {
+        font-size: 2rem;
+        height: 2rem;
+        width: 3.2rem;
+        padding: 0 0.2em;
+
+        border: 1px solid $link-color;
+        border-radius: 500px;
+      }
     }
   }
 
   #photo {
-    margin: 1em 0 0 0.25em;
+    margin-left: 1em;
     padding: 1px;
-    width: 25%;
-    height: 25%;
+    width: 33%;
+    height: 33%;
     float: right;
     content:url($gravatar);
     //background-image:url($gravatar) no-repeat;

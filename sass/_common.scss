@@ -1,0 +1,6 @@
+/* Shared variables/mixins between sass files */
+$bg-color:   #161616;
+$text-color: #D8D8C2;
+$blue: #84C2FF;
+$link-color: $blue;
+$link-hover-color: darken($blue, 15%);

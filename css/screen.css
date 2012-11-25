@@ -64,6 +64,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+/* Shared variables/mixins between sass files */
 /* Ligature Symbols
    http://kudakurage.com/ligature_symbols/ */
 @font-face {
@@ -75,14 +76,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-style: normal;
 }
 
-/* line 12, ../sass/screen.scss */
+/* line 6, ../sass/screen.scss */
 body {
   background: #161616;
   color: #d8d8c2;
   font: 150%/1.5 proxima-nova, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
-/* line 18, ../sass/screen.scss */
+/* line 12, ../sass/screen.scss */
 header h1 {
   color: #FFF;
   font-size: 2em;
@@ -90,12 +91,12 @@ header h1 {
   text-transform: lowercase;
 }
 
-/* line 25, ../sass/screen.scss */
+/* line 19, ../sass/screen.scss */
 img, p {
   margin-bottom: 1em;
 }
 
-/* line 29, ../sass/screen.scss */
+/* line 23, ../sass/screen.scss */
 a {
   color: #84c2ff;
   text-decoration: none;
@@ -104,36 +105,36 @@ a {
   -o-transition: color 0.2s ease-in;
   transition: color 0.2s ease-in;
 }
-/* line 38, ../sass/screen.scss */
+/* line 32, ../sass/screen.scss */
 a:hover {
   color: #389cff;
 }
 
-/* line 43, ../sass/screen.scss */
+/* line 37, ../sass/screen.scss */
 #photo {
   width: 100%;
   border: 1px solid #2f2f2f;
   padding: 2px;
 }
 
-/* line 49, ../sass/screen.scss */
+/* line 43, ../sass/screen.scss */
 header, footer {
   text-align: center;
 }
 
-/* line 53, ../sass/screen.scss */
+/* line 47, ../sass/screen.scss */
 #container {
   width: 600px;
   margin: 0 auto;
 }
 
-/* line 58, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 #about {
   width: 65%;
   float: left;
 }
 
-/* line 63, ../sass/screen.scss */
+/* line 57, ../sass/screen.scss */
 #elsewhere {
   float: right;
 }
@@ -155,62 +156,69 @@ header, footer {
   font-smoothing: antialiased;
 }
 
-/* line 69, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 footer {
   display: none;
 }
 
+/* Shared variables/mixins between sass files */
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* Styles */
-  /* line 6, ../sass/_mobile.scss */
+  /* line 7, ../sass/_mobile.scss */
   body {
     font-size: 1em;
     padding: 0 0.5em;
   }
 
-  /* line 14, ../sass/_mobile.scss */
+  /* line 15, ../sass/_mobile.scss */
   #container {
     width: 100%;
   }
 
-  /* line 16, ../sass/_mobile.scss */
+  /* line 17, ../sass/_mobile.scss */
   #about, #elsewhere {
     float: none;
     width: 100%;
   }
 
-  /* line 21, ../sass/_mobile.scss */
+  /* line 22, ../sass/_mobile.scss */
   #elsewhere {
+    margin-top: 1.5em;
     clear: both;
   }
-  /* line 24, ../sass/_mobile.scss */
+  /* line 26, ../sass/_mobile.scss */
   #elsewhere h2, #elsewhere ul li {
     display: inline;
   }
-  /* line 28, ../sass/_mobile.scss */
+  /* line 30, ../sass/_mobile.scss */
   #elsewhere h2 {
     display: none;
   }
-  /* line 30, ../sass/_mobile.scss */
+  /* line 32, ../sass/_mobile.scss */
   #elsewhere ul {
     text-align: center;
   }
-  /* line 32, ../sass/_mobile.scss */
+  /* line 34, ../sass/_mobile.scss */
   #elsewhere li a {
     font-size: 0;
   }
-  /* line 34, ../sass/_mobile.scss */
+  /* line 36, ../sass/_mobile.scss */
   #elsewhere li a:before {
     font-size: 2rem;
+    height: 2rem;
+    width: 3.2rem;
+    padding: 0 0.2em;
+    border: 1px solid #84c2ff;
+    border-radius: 500px;
   }
 
-  /* line 38, ../sass/_mobile.scss */
+  /* line 48, ../sass/_mobile.scss */
   #photo {
-    margin: 1em 0 0 0.25em;
+    margin-left: 1em;
     padding: 1px;
-    width: 25%;
-    height: 25%;
+    width: 33%;
+    height: 33%;
     float: right;
     content: url("http://www.gravatar.com/avatar/69b73085f8b2247cae956d2b6dbada2c?s=200");
     border-radius: 100px;
