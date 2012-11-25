@@ -36,11 +36,3 @@ $ligature-symbols-dir: '../fonts/LigatureSymbols/';
     @include lsf;
   }
 }
-
-.lsf {
-  @include lsf;
-}
-
-.lsf-icon {
-  @include lsf-icon;
-}
