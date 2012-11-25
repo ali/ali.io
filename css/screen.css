@@ -75,39 +75,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-style: normal;
 }
 
-/* line 40, ../sass/_ligature_symbols.scss */
-.lsf {
-  font-family: 'LigatureSymbols';
-  -webkit-text-rendering: optimizeLegibility;
-  -moz-text-rendering: optimizeLegibility;
-  -ms-text-rendering: optimizeLegibility;
-  -o-text-rendering: optimizeLegibility;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -ms-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-}
-
-/* line 32, ../sass/_ligature_symbols.scss */
-.lsf-icon:before {
-  content: attr(title);
-  margin-right: 0.3em;
-  font-size: 130%;
-  font-family: 'LigatureSymbols';
-  -webkit-text-rendering: optimizeLegibility;
-  -moz-text-rendering: optimizeLegibility;
-  -ms-text-rendering: optimizeLegibility;
-  -o-text-rendering: optimizeLegibility;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -ms-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-}
-
 /* line 12, ../sass/screen.scss */
 body {
   background: #161616;
@@ -117,7 +84,7 @@ body {
 
 /* line 18, ../sass/screen.scss */
 header h1 {
-  color: #fff;
+  color: #FFF;
   font-size: 2em;
   margin: 0.5em 0;
   text-transform: lowercase;
@@ -143,7 +110,7 @@ a:hover {
 }
 
 /* line 43, ../sass/screen.scss */
-img {
+#photo {
   width: 100%;
   border: 1px solid #2f2f2f;
   padding: 2px;
@@ -161,9 +128,14 @@ header, footer {
 }
 
 /* line 58, ../sass/screen.scss */
+#about {
+  width: 65%;
+  float: left;
+}
+
+/* line 63, ../sass/screen.scss */
 #elsewhere {
   float: right;
-  margin-left: 2em;
 }
 /* line 32, ../sass/_ligature_symbols.scss */
 #elsewhere li a:before {
@@ -183,7 +155,7 @@ header, footer {
   font-smoothing: antialiased;
 }
 
-/* line 65, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 footer {
   display: none;
 }
@@ -191,6 +163,59 @@ footer {
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* Styles */
+  /* line 6, ../sass/_mobile.scss */
+  body {
+    font-size: 1em;
+    padding: 0 0.5em;
+  }
+
+  /* line 14, ../sass/_mobile.scss */
+  #container {
+    width: 100%;
+  }
+
+  /* line 16, ../sass/_mobile.scss */
+  #about, #elsewhere {
+    float: none;
+    width: 100%;
+  }
+
+  /* line 21, ../sass/_mobile.scss */
+  #elsewhere {
+    clear: both;
+  }
+  /* line 24, ../sass/_mobile.scss */
+  #elsewhere h2, #elsewhere ul li {
+    display: inline;
+  }
+  /* line 28, ../sass/_mobile.scss */
+  #elsewhere h2 {
+    display: none;
+  }
+  /* line 30, ../sass/_mobile.scss */
+  #elsewhere ul {
+    text-align: center;
+  }
+  /* line 32, ../sass/_mobile.scss */
+  #elsewhere li a {
+    font-size: 0;
+  }
+  /* line 34, ../sass/_mobile.scss */
+  #elsewhere li a:before {
+    font-size: 2rem;
+  }
+
+  /* line 38, ../sass/_mobile.scss */
+  #photo {
+    margin: 1em 0 0 0.25em;
+    padding: 1px;
+    width: 25%;
+    height: 25%;
+    float: right;
+    content: url("http://www.gravatar.com/avatar/69b73085f8b2247cae956d2b6dbada2c?s=200");
+    border-radius: 100px;
+    border-color: #FFF;
+  }
 }
 /* Smartphones (landscape) ----------- */
 /* Smartphones (portrait) ----------- */
