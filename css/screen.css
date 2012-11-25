@@ -155,12 +155,12 @@ header, footer {
 }
 
 /* line 53, ../sass/screen.scss */
-#about {
+#container {
   width: 600px;
   margin: 0 auto;
 }
 
-/* line 59, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 #elsewhere {
   float: right;
   margin-left: 2em;
@@ -183,7 +183,17 @@ header, footer {
   font-smoothing: antialiased;
 }
 
-/* line 66, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 footer {
   display: none;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+}
+/* Smartphones (landscape) ----------- */
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */
 }

@@ -50,10 +50,9 @@ header, footer {
   text-align: center;
 }
 
-#about {
+#container {
   width: 600px;
   margin: 0 auto;
-
 }
 
 #elsewhere {
@@ -64,3 +63,6 @@ header, footer {
 }
 
 footer { display: none; }
+
+@import "mobile";
+
