@@ -1,11 +1,55 @@
+$gravatar: "http://www.gravatar.com/avatar/69b73085f8b2247cae956d2b6dbada2c?s=200";
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   /* Styles */
+  body {
+    font-size: 1em;
+    padding: 0 0.5em;
+  }
+
+  header h1 {
+  }
+
+  #container { width: 100%; }
+
+  #about, #elsewhere {
+    float: none;
+    width: 100%;
+  }
+
+  #elsewhere {
+    clear: both;
+
+    h2, ul li {
+      display: inline;
+    }
+
+    h2 { display: none; }
+
+    ul { text-align: center; }
+
+    li a {
+      font-size: 0;
+      &:before { font-size: 2rem; }
+    }
+  }
+
+  #photo {
+    margin: 1em 0 0 0.25em;
+    padding: 1px;
+    width: 25%;
+    height: 25%;
+    float: right;
+    content:url($gravatar);
+    //background-image:url($gravatar) no-repeat;
+    border-radius: 100px;
+    border-color: #FFF;
+  }
 }
 
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width : 321px) {
-
 }
 
 /* Smartphones (portrait) ----------- */
