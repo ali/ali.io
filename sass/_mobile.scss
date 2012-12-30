@@ -1,5 +1,7 @@
-@import "common";
-$gravatar: "http://www.gravatar.com/avatar/69b73085f8b2247cae956d2b6dbada2c?s=200";
+@import 'common';
+$gravatar: 'http://www.gravatar.com/avatar/69b73085f8b2247cae956d2b6dbada2c?s=200';
+$blankPixel: 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
+
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
@@ -46,15 +48,18 @@ $gravatar: "http://www.gravatar.com/avatar/69b73085f8b2247cae956d2b6dbada2c?s=20
   }
 
   #photo {
-    margin-left: 1em;
-    padding: 1px;
+    float: right;
+    margin: 0 0.1em 0 1em;
     width: 33%;
     height: 33%;
-    float: right;
-    content:url($gravatar);
-    //background-image:url($gravatar) no-repeat;
-    border-radius: 100px;
-    border-color: #FFF;
+
+    content: url($blankPixel);
+    background: url($gravatar) no-repeat;
+    background-size: cover;
+
+    border: solid 3px #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #000 inset, 0 0 5px #000;
   }
 }
 

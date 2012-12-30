@@ -165,45 +165,45 @@ footer {
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* Styles */
-  /* line 7, ../sass/_mobile.scss */
+  /* line 9, ../sass/_mobile.scss */
   body {
     font-size: 1em;
     padding: 0 0.5em;
   }
 
-  /* line 15, ../sass/_mobile.scss */
+  /* line 17, ../sass/_mobile.scss */
   #container {
     width: 100%;
   }
 
-  /* line 17, ../sass/_mobile.scss */
+  /* line 19, ../sass/_mobile.scss */
   #about, #elsewhere {
     float: none;
     width: 100%;
   }
 
-  /* line 22, ../sass/_mobile.scss */
+  /* line 24, ../sass/_mobile.scss */
   #elsewhere {
     margin-top: 1.5em;
     clear: both;
   }
-  /* line 26, ../sass/_mobile.scss */
+  /* line 28, ../sass/_mobile.scss */
   #elsewhere h2, #elsewhere ul li {
     display: inline;
   }
-  /* line 30, ../sass/_mobile.scss */
+  /* line 32, ../sass/_mobile.scss */
   #elsewhere h2 {
     display: none;
   }
-  /* line 32, ../sass/_mobile.scss */
+  /* line 34, ../sass/_mobile.scss */
   #elsewhere ul {
     text-align: center;
   }
-  /* line 34, ../sass/_mobile.scss */
+  /* line 36, ../sass/_mobile.scss */
   #elsewhere li a {
     font-size: 0;
   }
-  /* line 36, ../sass/_mobile.scss */
+  /* line 38, ../sass/_mobile.scss */
   #elsewhere li a:before {
     font-size: 2rem;
     height: 2rem;
@@ -213,16 +213,18 @@ footer {
     border-radius: 500px;
   }
 
-  /* line 48, ../sass/_mobile.scss */
+  /* line 50, ../sass/_mobile.scss */
   #photo {
-    margin-left: 1em;
-    padding: 1px;
+    float: right;
+    margin: 0 0.1em 0 1em;
     width: 33%;
     height: 33%;
-    float: right;
-    content: url("http://www.gravatar.com/avatar/69b73085f8b2247cae956d2b6dbada2c?s=200");
-    border-radius: 100px;
-    border-color: #FFF;
+    content: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
+    background: url("http://www.gravatar.com/avatar/69b73085f8b2247cae956d2b6dbada2c?s=200") no-repeat;
+    background-size: cover;
+    border: solid 3px #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #000 inset, 0 0 5px #000;
   }
 }
 /* Smartphones (landscape) ----------- */
