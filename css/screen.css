@@ -1,245 +1,59 @@
 /* Main styles for ali.io */
-/* line 17, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
 
-/* line 22, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html {
-  line-height: 1;
-}
+html { line-height: 1; }
 
-/* line 24, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
+ol, ul { list-style: none; }
 
-/* line 26, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+table { border-collapse: collapse; border-spacing: 0; }
 
-/* line 28, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
 
-/* line 30, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 103, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
+q, blockquote { quotes: none; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
 
-/* line 32, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
+a img { border: none; }
 
-/* line 116, ../../../.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block;
-}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
 
-/* line 2, ../sass/neat/grid/_grid.scss */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-/* Ligature Symbols
-   http://kudakurage.com/ligature_symbols/ */
-@font-face {
-  font-family: 'LigatureSymbols';
-  src: url("../fonts/LigatureSymbols/LigatureSymbols-2.09.eot");
-  src: url("../fonts/LigatureSymbols/LigatureSymbols-2.09.eot?#iefix") format("embedded-opentype"), url("../fonts/LigatureSymbols/LigatureSymbols-2.09.woff") format("woff"), url("../fonts/LigatureSymbols/LigatureSymbols-2.09.ttf") format("truetype"), url("../fonts/LigatureSymbols/LigatureSymbols-2.09.svg#LigatureSymbols") format("svg");
-  src: url("../fonts/LigatureSymbols/LigatureSymbols-2.09.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
+/* Ligature Symbols http://kudakurage.com/ligature_symbols/ */
+@font-face { font-family: 'LigatureSymbols'; src: url("../fonts/LigatureSymbols/LigatureSymbols-2.09.eot"); src: url("../fonts/LigatureSymbols/LigatureSymbols-2.09.eot?#iefix") format("embedded-opentype"), url("../fonts/LigatureSymbols/LigatureSymbols-2.09.woff") format("woff"), url("../fonts/LigatureSymbols/LigatureSymbols-2.09.ttf") format("truetype"), url("../fonts/LigatureSymbols/LigatureSymbols-2.09.svg#LigatureSymbols") format("svg"); src: url("../fonts/LigatureSymbols/LigatureSymbols-2.09.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
-/* line 9, ../sass/screen.scss */
-body {
-  background: #444444 url("../img/photo.png") center center no-repeat fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -ms-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  color: white;
-  font: 125%/1.25 proxima-nova, Helvetica Neue, Helvetica, Arial, sans-serif;
-  text-shadow: 1px 1px 0.5em black;
-}
+body { background: #444444 url("../img/photo.png") center center no-repeat fixed; -webkit-background-size: cover; -moz-background-size: cover; -ms-background-size: cover; -o-background-size: cover; background-size: cover; color: white; font: 125%/1.25 proxima-nova, Helvetica Neue, Helvetica, Arial, sans-serif; text-shadow: 1px 1px 0.5em black; }
 
-/* line 17, ../sass/screen.scss */
-::selection {
-  background: #84c2ff;
-  color: #fff;
-  text-shadow: none;
-}
+::selection { background: #84c2ff; color: #fff; text-shadow: none; }
 
-/* line 23, ../sass/screen.scss */
-#container {
-  *zoom: 1;
-  max-width: 60em;
-  margin-left: auto;
-  margin-right: auto;
-  margin: 2em;
-}
-/* line 18, ../sass/bourbon/addons/_clearfix.scss */
-#container:before, #container:after {
-  content: " ";
-  display: table;
-}
-/* line 23, ../sass/bourbon/addons/_clearfix.scss */
-#container:after {
-  clear: both;
-}
+#container { *zoom: 1; max-width: 60em; margin-left: auto; margin-right: auto; margin: 2em; }
+#container:before, #container:after { content: " "; display: table; }
+#container:after { clear: both; }
 
-/* line 28, ../sass/screen.scss */
-header {
-  display: block;
-  float: left;
-  margin-right: 2.12766%;
-  width: 14.89362%;
-}
-/* line 54, ../sass/neat/grid/_span-columns.scss */
-header:last-child {
-  margin-right: 0;
-}
-/* line 30, ../sass/screen.scss */
-header hgroup {
-  text-align: center;
-  margin-bottom: 1em;
-}
-/* line 34, ../sass/screen.scss */
-header hgroup h1 {
-  color: #FFF;
-  font-size: 2em;
-  text-transform: lowercase;
-}
+header { display: block; float: left; margin-right: 2.12766%; width: 14.89362%; }
+header:last-child { margin-right: 0; }
+header hgroup { text-align: center; margin-bottom: 1em; }
+header hgroup h1 { color: #FFF; font-size: 2em; text-transform: lowercase; }
 
-/* line 42, ../sass/screen.scss */
-#content {
-  display: block;
-  float: left;
-  margin-right: 2.12766%;
-  width: 82.97872%;
-  margin-right: 0;
-}
-/* line 54, ../sass/neat/grid/_span-columns.scss */
-#content:last-child {
-  margin-right: 0;
-}
+#content { display: block; float: left; margin-right: 2.12766%; width: 82.97872%; margin-right: 0; }
+#content:last-child { margin-right: 0; }
 
-/* line 47, ../sass/screen.scss */
-section {
-  *zoom: 1;
-  display: block;
-  border-radius: 0.25em;
-  font-size: 2em;
-  font-weight: bold;
-}
-/* line 18, ../sass/bourbon/addons/_clearfix.scss */
-section:before, section:after {
-  content: " ";
-  display: table;
-}
-/* line 23, ../sass/bourbon/addons/_clearfix.scss */
-section:after {
-  clear: both;
-}
+section { *zoom: 1; display: block; border-radius: 0.25em; font-size: 2em; font-weight: bold; }
+section:before, section:after { content: " "; display: table; }
+section:after { clear: both; }
 
-/* line 55, ../sass/screen.scss */
-p:not(:last-child), ul {
-  margin-bottom: 1em;
-}
+p:not(:last-child), ul { margin-bottom: 1em; }
 
-/* line 32, ../sass/_ligature_symbols.scss */
-nav ul li a:before {
-  content: attr(data-icon);
-  margin-right: 0.3em;
-  font-size: 130%;
-  font-family: 'LigatureSymbols';
-  -webkit-text-rendering: optimizeLegibility;
-  -moz-text-rendering: optimizeLegibility;
-  -ms-text-rendering: optimizeLegibility;
-  -o-text-rendering: optimizeLegibility;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -ms-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-}
+nav ul li a:before { content: attr(data-icon); margin-right: 0.3em; font-size: 130%; font-family: 'LigatureSymbols'; -webkit-text-rendering: optimizeLegibility; -moz-text-rendering: optimizeLegibility; -ms-text-rendering: optimizeLegibility; -o-text-rendering: optimizeLegibility; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; font-smoothing: antialiased; }
 
-/* line 61, ../sass/screen.scss */
-footer {
-  *zoom: 1;
-  display: block;
-  color: transparent;
-  text-align: center;
-  text-shadow: none;
-}
-/* line 18, ../sass/bourbon/addons/_clearfix.scss */
-footer:before, footer:after {
-  content: " ";
-  display: table;
-}
-/* line 23, ../sass/bourbon/addons/_clearfix.scss */
-footer:after {
-  clear: both;
-}
+footer { *zoom: 1; display: block; color: transparent; text-align: center; text-shadow: none; }
+footer:before, footer:after { content: " "; display: table; }
+footer:after { clear: both; }
 
-/* line 68, ../sass/screen.scss */
-a {
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-  color: #84c2ff;
-  text-decoration: none;
-}
-/* line 72, ../sass/screen.scss */
-a:hover {
-  color: #fff;
-  text-shadow: -1px 1px 8px #ffffcc, 1px -1px 8px white;
-}
+a { -webkit-transition: all 0.2s ease-in; -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; transition: all 0.2s ease-in; color: #84c2ff; text-decoration: none; }
+a:hover { color: #fff; text-shadow: -1px 1px 8px #ffffcc, 1px -1px 8px white; }
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* line 8, ../sass/_mobile.scss */
-  #content section {
-    font-size: 1em;
-  }
-}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) { #content section { font-size: 1em; } }
 /* Smartphones (landscape) ----------- */
 /* Smartphones (portrait) ----------- */
-@media only screen and (max-width: 320px) {
-  /* Styles */
-}
+@media only screen and (max-width: 320px) { /* Styles */ }
