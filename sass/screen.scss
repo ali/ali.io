@@ -1,65 +1,78 @@
 /* Main styles for ali.io */
 @import "compass/reset";
-@import "common";
+@import "bourbon/bourbon";
+@import "grid_settings";
+@import "neat/neat";
+@import "side_table_drawer";
 @import 'ligature_symbols';
 
 body {
-  background: $bg-color;
+  background: $bg-color url('../img/photo.png') center center no-repeat fixed;
+  @include background-size(cover);
   color: $text-color;
-  font: 150%/1.5 proxima-nova, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font: 125%/1.25 proxima-nova, Helvetica Neue, Helvetica, Arial, sans-serif;
+  text-shadow: 1px 1px em(8) #000; // rgba(0, 0, 0, 0.8);
 }
 
-header h1 {
-  color: #FFF;
-  font-size: 2em;
-  margin: 0.5em 0;
-  text-transform: lowercase;
-}
-
-img, p {
-  margin-bottom: 1em;
-}
-
-a {
-  color: $link-color;
-  text-decoration: none;
-
-  -webkit-transition:color 0.2s ease-in;
-  -moz-transition:color 0.2s ease-in;
-  -o-transition:color 0.2s ease-in;
-  transition:color 0.2s ease-in;
-
-  &:hover {
-    color: $link-hover-color;
-  }
-}
-
-#photo {
-  width: 100%;
-  border: 1px solid lighten($bg-color, 10%);
-  padding: 2px;
-}
-
-header, footer {
-  text-align: center;
+::selection {
+  background: $blue;
+  color: #fff;
+  text-shadow: none;
 }
 
 #container {
-  width: 600px;
-  margin: 0 auto;
+  @include outer-container;
+  margin: 2em;
 }
 
-#about {
-  width: 65%;
-  float: left;
+header {
+  @include span-columns(2);
+  hgroup {
+    text-align: center;
+    margin-bottom: 1em;
+
+    h1 {
+      color: #FFF;
+      font-size: 2em;
+      text-transform: lowercase;
+    }
+  }
 }
 
-#elsewhere {
-  float: right;
-
-  li a { @include lsf-icon; }
+#content {
+  @include span-columns(10);
+  @include omega;
 }
 
-footer { display: none; }
+section {
+  @include row;
+  border-radius: em(4);
+
+  font-size: 2em;
+  font-weight: bold;
+}
+
+p:not(:last-child), ul {
+  margin-bottom: 1em;
+}
+
+nav ul li a { @include lsf-icon; }
+
+footer {
+  @include row;
+  color: transparent;
+  text-align: center;
+  text-shadow: none;
+}
+
+a {
+  @include transition(all 0.2s ease-in);
+  color: $link-color;
+  text-decoration: none;
+  &:hover {
+    color: #fff;
+    text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+  }
+}
 
 @import "mobile";

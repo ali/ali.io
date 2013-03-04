@@ -30,7 +30,7 @@ $ligature-symbols-dir: '../fonts/LigatureSymbols/';
 
 @mixin lsf-icon {
   &:before {
-    content:attr(title);
+    content:attr(data-icon);
     margin-right:0.3em;
     font-size:130%;
     @include lsf;
