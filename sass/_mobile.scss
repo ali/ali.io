@@ -1,65 +1,12 @@
-@import 'common';
+@import 'side_table_drawer';
 $gravatar: 'http://www.gravatar.com/avatar/69b73085f8b2247cae956d2b6dbada2c?s=200';
 $blankPixel: 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
 
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  /* Styles */
-  body {
+  #content section {
     font-size: 1em;
-    padding: 0 0.5em;
-  }
-
-  header h1 {
-  }
-
-  #container { width: 100%; }
-
-  #about, #elsewhere {
-    float: none;
-    width: 100%;
-  }
-
-  #elsewhere {
-    margin-top: 1.5em;
-    clear: both;
-
-    h2, ul li {
-      display: inline;
-    }
-
-    h2 { display: none; }
-
-    ul { text-align: center; }
-
-    li a {
-      font-size: 0;
-      &:before {
-        font-size: 2rem;
-        height: 2rem;
-        width: 3.2rem;
-        padding: 0 0.2em;
-
-        border: 1px solid $link-color;
-        border-radius: 500px;
-      }
-    }
-  }
-
-  #photo {
-    float: right;
-    margin: 0 0.1em 0 1em;
-    width: 33%;
-    height: 33%;
-
-    content: url($blankPixel);
-    background: url($gravatar) no-repeat;
-    background-size: cover;
-
-    border: solid 3px #fff;
-    border-radius: 50%;
-    box-shadow: 0 0 5px #000 inset, 0 0 5px #000;
   }
 }
 
