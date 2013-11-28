@@ -1,49 +1,39 @@
-JADEDIR = jade
-STYLUSDIR = stylus
-ASSETSDIR = assets
+JADE_DIR = jade
+STYLUS_DIR = stylus
+ASSETS_DIR = assets
 
 PUBLIC = public
-HTMLDIR = $(PUBLIC)
-CSSDIR = $(PUBLIC)/css
-ASSETDIRS = $(patsubst $(ASSETSDIR)/%,$(PUBLIC)/%,$(shell find $(ASSETSDIR) -type d))
+CSS_DIR = $(PUBLIC)/css
 
-JADE = $(shell find $(JADEDIR) -name "*.jade" -not -path "*_*.jade")
-HTML = $(patsubst $(JADEDIR)/%.jade,$(HTMLDIR)/%.html,$(JADE))
+JADE := $(shell find $(JADE_DIR) -name "*.jade" -not -path "*_*.jade")
+HTML := $(patsubst $(JADE_DIR)/%.jade,$(PUBLIC)/%.html,$(JADE))
 
-STYLUS = $(shell find stylus -name "*.styl" -not -path "*_*.styl")
-CSS = $(patsubst $(STYLUSDIR)/%.styl,$(CSSDIR)/%.css,$(STYLUS))
+STYLUS := $(shell find stylus -name "*.styl" -not -path "*_*.styl")
+CSS := $(patsubst $(STYLUS_DIR)/%.styl,$(CSS_DIR)/%.css,$(STYLUS))
 
-ASSETS = $(shell find $(ASSETSDIR) -type f)
-PUBLICASSETS = $(patsubst $(ASSETSDIR)/%,$(PUBLIC)/%,$(ASSETS))
+.PHONY : all compile server clean assets
 
-.PHONY: all test compile server clean 
+all : compile
 
-all: compile
+compile : $(HTML) $(CSS) assets
 
-test: $(PUBLICASSETS)
-
-compile: $(HTML) $(CSS) $(PUBLICASSETS)
-
-server:
+server :
 	# requires https://github.com/nodeapps/http-server
 	http-server
 
-clean:
+clean :
 	rm -rf $(PUBLIC)
 
-# Compilation
-
-$(HTML): $(JADE) | $(PUBLIC)
+# Compile things
+$(HTML) : $(JADE) | $(PUBLIC)
 	jade -Pp ./jade/jade < $< > $@
 
-$(CSS): $(STYLUS) | $(CSSDIR)
+$(CSS) : $(STYLUS) | $(CSS_DIR)
 	stylus -c < $< > $@
 
-$(PUBLICASSETS): $(ASSETS) | $(ASSETDIRS)
-	touch $<
-	touch $@
+assets: $(PUBLIC)
+	cp -R $(ASSETS_DIR)/* $(PUBLIC)
 
-# Directories
+# Make directories
 $(PUBLIC) $(PUBLIC)/%:
 	mkdir -p $@
-
