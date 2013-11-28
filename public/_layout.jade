@@ -1,17 +1,4 @@
-doctype 5
-html(lang="en")
-  head
-    meta(charset="utf-8")
-    title Ali Ukani
-    meta(name="description", content="")
-    meta(name="author", content="Ali Ukani ali.ukani@gmail.com")
-    meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
-
-    link(rel="stylesheet", href="css/base.css")
-    link(rel="stylesheet", href="css/skeleton.css")
-    link(rel="stylesheet", href="css/layout.css")
-
-    link(rel="shortcut icon", href="images/favicon.ico")
+!= partial("_shared/head")
 
 body
   .container
@@ -34,5 +21,4 @@ body
     .eleven.columns.offset-by-one.content.clearfix
       != yield
 
-  script(type="text/javascript", src="//use.typekit.net/pki7lsc.js")
-  script(type="text/javascript") try{Typekit.load();}catch(e){}
+!= partial("_shared/tail")
