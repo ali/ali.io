@@ -1,12 +1,3 @@
-/*
-* Skeleton V1.2
-* Copyright 2011, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 6/20/2012
-*/
-
 /* Table of Content
 ==================================================
   #Site Styles
@@ -19,6 +10,11 @@
 body
   background: #191d1f
   color: #fff
+  padding: 1em 0
+  font: 1.6em/155% "proxima-nova-1","proxima-nova-2", 'Helvetica', sans-serif
+
+img
+  max-width: 100%
 
 a
   color: #bbb
@@ -27,19 +23,20 @@ a
   &:hover
     color: #becccb
 
-h1, h2, h3, h4, h5, h6, strong
-  color: #fff
-
 header
   text-align: center
-  height: 10em
+  margin-bottom: 1em
 
   h1
-    line-height: 3em
-    vertical-align: middle
-    display: inline
-    background-size: cover
+    font-weight: 900
 
+ h1, h2, h3, h4, h5, h6
+   color: #fff
+   font-weight: bold
+   line-height: 2em
+
+.hubspot
+  color: #ffac58
 
 /* #Page Styles
 ================================================== */
@@ -47,21 +44,32 @@ header
 /* #Media Queries
 ================================================== */
 
+// Bigscreen
+@media only screen and (min-width:768px)
+  #sidebar div
+    position: fixed
+    width: 220px
+
+  header h1
+    border: 5px solid
+    padding: 0.25em
+
 /* Smaller than standard 960 (devices and browsers) */
-@media only screen and (max-width: 959px) {}
+// @media only screen and (max-width: 959px)
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
-@media only screen and (min-width: 768px) and (max-width: 959px) {}
+// @media only screen and (min-width: 768px) and (max-width: 959px)
 
 /* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 767px)
+  #sidebar ul
+    display: none
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-@media only screen and (min-width: 480px) and (max-width: 767px) {}
+// @media only screen and (min-width: 480px) and (max-width: 767px)
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 479px) {}
-
+// @media only screen and (max-width: 479px)
 
 /* #Font-Face
 ================================================== */

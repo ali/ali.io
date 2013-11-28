@@ -1,0 +1,38 @@
+doctype 5
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title Ali Ukani
+    meta(name="description", content="")
+    meta(name="author", content="Ali Ukani ali.ukani@gmail.com")
+    meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
+
+    link(rel="stylesheet", href="css/base.css")
+    link(rel="stylesheet", href="css/skeleton.css")
+    link(rel="stylesheet", href="css/layout.css")
+
+    link(rel="shortcut icon", href="images/favicon.ico")
+
+body
+  .container
+
+    #sidebar.four.columns.alpha
+      div
+        header
+          h1 AUK
+
+        nav
+          ul
+            li: a(href="#works") Works
+            li: a(href="#community") Community
+            li: a(href="//twitter.com/aliukani") Twitter
+            li: a(href="//github.com/ali") Github
+            li: a(href="//linkedin.com/in/aliukani") LinkedIn
+
+      &nbsp;
+
+    .eleven.columns.offset-by-one.content.clearfix
+      block content
+
+  script(type="text/javascript", src="//use.typekit.net/pki7lsc.js")
+  script(type="text/javascript") try{Typekit.load();}catch(e){}

@@ -1,16 +1,25 @@
-all: dev
+PUBLIC = public
+JADE = $(shell find jade -name "*.jade" -not -path "*_*.jade")
+HTML = $(JADE:.jade=.html)
+STYLUS = $(shell find stylus -name "*.styl" -not -path "*_*.styl")
+CSS = $(STYLUS:.styl=.css)
 
-dev: stylus jade server
+all: clean compile
 
-stylus:
-	stylus -w -c stylesheets &
+compile: $(HTML) $(CSS)
 
-jade: index.jade
-	jade -w *.jade~_* &
+%.html: %.jade
+	mkdir -p $(PUBLIC)
+	jade $< -o $(PUBLIC)
+
+%.css: %.styl
+	mkdir -p $(PUBLIC)/css
+	stylus $< -o $(PUBLIC)/css
 
 server:
-	python -m SimpleHTTPServer 8000 1> /dev/null &
+	http-server
 
-kill:
-	ps -ef | grep -w -e stylus -e jade -e python | grep -wv -e grep -e vim | cut -c 7-11 | xargs kill
+clean:
+	rm -rf $(PUBLIC)
 
+.PHONY: clean
