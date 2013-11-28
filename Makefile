@@ -16,6 +16,7 @@ compile: $(HTML) $(CSS)
 	mkdir -p $(PUBLIC)/css
 	stylus $< -o $(PUBLIC)/css
 
+# requires https://github.com/nodeapps/http-server
 server:
 	http-server
 
