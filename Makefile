@@ -16,12 +16,16 @@ CSS = $(patsubst $(STYLUSDIR)/%.styl,$(CSSDIR)/%.css,$(STYLUS))
 ASSETS = $(shell find $(ASSETSDIR) -type f)
 PUBLICASSETS = $(patsubst $(ASSETSDIR)/%,$(PUBLIC)/%,$(ASSETS))
 
+.PHONY: all test compile server clean 
+
 all: compile
+
+test: $(PUBLICASSETS)
 
 compile: $(HTML) $(CSS) $(PUBLICASSETS)
 
-# requires https://github.com/nodeapps/http-server
 server:
+	# requires https://github.com/nodeapps/http-server
 	http-server
 
 clean:
@@ -30,16 +34,16 @@ clean:
 # Compilation
 
 $(HTML): $(JADE) | $(PUBLIC)
-	jade $< -o $(HTMLDIR)
+	jade -Pp ./jade/jade < $< > $@
 
 $(CSS): $(STYLUS) | $(CSSDIR)
-	stylus -c $< -o $(CSSDIR)
+	stylus -c < $< > $@
 
 $(PUBLICASSETS): $(ASSETS) | $(ASSETDIRS)
-	cp $< $@
+	touch $<
+	touch $@
 
 # Directories
 $(PUBLIC) $(PUBLIC)/%:
 	mkdir -p $@
 
-.PHONY: all compile server clean
