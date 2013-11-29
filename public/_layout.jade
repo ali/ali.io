@@ -1,0 +1,24 @@
+!= partial("_shared/head")
+
+body
+  .container
+
+    #sidebar.four.columns.alpha
+      div
+        header
+          h1: a(href="/") AUK
+
+        nav
+          ul
+            li: a(href="/work.html") Work
+            li: a(href="/community.html") Community
+            li: a(href="//twitter.com/aliukani") Twitter
+            li: a(href="//github.com/ali") Github
+            li: a(href="//linkedin.com/in/aliukani") LinkedIn
+
+      &nbsp;
+
+    .eleven.columns.offset-by-one.content.clearfix
+      != yield
+
+!= partial("_shared/tail")
