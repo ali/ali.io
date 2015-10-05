@@ -1,4 +1,7 @@
-/* Table of Content
+@import "base";
+@import "skeleton";
+
+/* Table of Contents
 ==================================================
   #Site Styles
   #Page Styles
@@ -7,39 +10,47 @@
 
 /* #Site Styles
 ================================================== */
-body
-  background: #191d1f
-  color: #fff
-  padding: 1em 0
-  font: 1.6em/155% "proxima-nova-1","proxima-nova-2", 'Helvetica', sans-serif
+body {
+  background: #191d1f;
+  color: #ffffff;
+  padding: 1em 0;
+  font: 1.6em/155% "proxima-nova-1","proxima-nova-2", 'Helvetica', sans-serif;
+}
 
-img
-  max-width: 100%
+img {
+  max-width: 100%;
+}
 
-a, a:visited, a h2
-  color: #bbb
-  text-decoration: none
+a, a:visited, a h2 {
+  color: #bbb;
+  text-decoration: none;
 
-  &:hover
-    color: #becccb
+  &:hover {
+    color: #becccb;
+  }
+}
 
-header
-  text-align: center
-  margin-bottom: 1em
+header {
+  text-align: center;
+  margin-bottom: 1em;
 
-  h1
-    font-weight: 900
-    border: 5px solid
-    padding: 0.25em
+  h1 {
+    font-weight: 900;
+    border: 5px solid;
+    padding: 0.25em;
+  }
+}
 
- h1, h2, h3, h4, h5, h6
-   color: #fff
-   font-weight: bold
-   line-height: 4rem
-   font-family: inherit
+h1, h2, h3, h4, h5, h6 {
+  color: #fff;
+  font-weight: bold;
+  line-height: 4rem;
+  font-family: inherit;
+}
 
-.hubspot
-  color: #ffac58
+.hubspot {
+  color: #ffac58;
+}
 
 /* #Page Styles
 ================================================== */
@@ -48,10 +59,12 @@ header
 ================================================== */
 
 // Bigscreen
-@media only screen and (min-width:768px)
-  #sidebar div
-    position: fixed
-    width: 220px
+@media only screen and (min-width:768px) {
+  #sidebar div {
+    position: fixed;
+    width: 220px;
+  }
+}
 
 /* Smaller than standard 960 (devices and browsers) */
 // @media only screen and (max-width: 959px)
@@ -60,30 +73,37 @@ header
 // @media only screen and (min-width: 768px) and (max-width: 959px)
 
 /* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px)
-  #sidebar ul
-    text-align: center
+@media only screen and (max-width: 767px) {
+  #sidebar ul {
+    text-align: center;
 
-    li
-      display: inline
-      margin-left: 10%
+    li {
+      display: inline;
+      margin-left: 10%;
 
-      &:first-child
-        margin-left: 0
+      &:first-child {
+        margin-left: 0;
+      }
 
-      &:nth-child(1n+4)
-        display: none
+      &:nth-child(1n+4) {
+        display: none;
+      }
+    }
+  }
 
-  #sidebar span, #cover
-    display: none
+  #sidebar span, #cover {
+    display: none;
+  }
 
-  header h1
-    background: url('../images/glasshole.jpg') no-repeat
-    background-size: cover
+  header h1 {
+    background: url('../images/glasshole.jpg') no-repeat;
+    background-size: cover;
+  }
 
-    a, a:visited
-      color: #fff
-
+  a, a:visited {
+    color: #fff;
+  }
+}
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 // @media only screen and (min-width: 480px) and (max-width: 767px)
 

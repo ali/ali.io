@@ -1,11 +1,9 @@
 # ali.io
 
-My personal website, made with [Harp][].
-
-[Harp]: https://github.com/sintaxi/harp
+My personal website.
 
 
 ## Instructions
 
-* `npm run start` - Starts the harp dev server.
-* `npm run build` - Compiles the website, outputs to the `/www` directory.
+* `npm run start` - Starts the webpack server.
+* `npm run build` - Compiles the website, outputs to the `/build` directory.
