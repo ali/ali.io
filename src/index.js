@@ -1,13 +1,12 @@
 /** Styles */
-require('./css/layout.scss');
+require('./styles.scss');
 
 /** Pages */
 require('./index.jade');
-require('./work.jade');
-require('./community.jade');
 require('./404.jade');
 
 /** Assets */
-require('./images/glasshole.jpg');
+require('./images/me.jpg');
+require('./aliukani.asc');
 
 module.exports = {};

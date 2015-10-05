@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+  head
+    include ./_shared/head.jade
+
+body
+  .container
+    header
+      block header
+ 
+    section#content
+      block content
+    
+    footer: p
+      | Made with 🚀 in Boston, MA.
+      | <a href="https://github.com/ali/ali.io" target="_blank">View source.</a>
+
+include ./_shared/tail.jade

@@ -1,13 +1,52 @@
-extends ./_layout.jade
+extends ./layout.jade
+
+block header
+  img#photo(
+    src="/images/me.jpg",
+    alt="A photo of Ali Ukani, looking off to the side. Taken by Alice Young."
+  )
+  h1 Ali Ukani
+
 
 block content
-  #cover
-    img(src="images/glasshole.jpg",
-      title="And then I became a Glasshole... (photo by my BFF Alice Young)")
-  
-  #mission
-    p.
-      I'm a (graduating) Senior Computer Science major at NEU, with previous
-      software engineering gigs at Google, HubSpot, and Goldman Sachs.
-      I like creative problem solving, developing for the web, and rock
-      climbing.
+
+  p I'm a recent Computer Science grad from Northeastern University.
+
+  p
+    | I built web applications at Google and HubSpot, started an annual
+    | collegiate hackathon, and lead student organizations at
+    | Northeastern.
+
+  p
+    | I'm currently working on some personal projects (mostly
+    | involving React, Webpack, and Electron) and reading books.
+
+  p
+    | If you'd like to reach out, you can <a
+    | href="https://twitter.com/aliukani" target="_blank">find me on
+    | Twitter</a> or <a href="mailto:ali.ukani@gmail.com?subject=Hi!"
+    | target="_blank">send me an email</a>. My PGP key fingerprint is
+    | <a href="/aliukani.asc" title="My PGP key">2842 EEFF 9431 CB31
+    | BF08 CB11 FC00 566B E2D3 FD7E</a>.
+
+
+  h2 Work
+
+  ul
+    li Software Engineering Co-op, Google (2014)
+    li Software Engineering Co-op, HubSpot (2013)
+    li Application Developer Analyst Co-op, Goldman Sachs (2012)
+
+
+  h2 Leadership 
+
+  ul
+    li Lead Organizer, HackBeanpot (2014)
+    li Cofounder & Organizer, HackBeanpot (2012–2013)
+    li Cofounder & President, NU Hacks (2012–2014)
+    li
+      | President, <abbr title="Northeastern University Association
+      | for Computing Machinery">NUACM</abbr> (2013–2014)
+    li Officer & Project Leader, Undergraduate Experimental Systems Group (2012–2015)
+
+    

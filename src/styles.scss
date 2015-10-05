@@ -1,0 +1,56 @@
+$fonts: "proxima-nova-1","proxima-nova-2", 'Helvetica', sans-serif;
+
+$photo-max-dimensions: 150px;
+$photo-dimensions: 33%;
+
+body {
+  background: #191d1f;
+  color: #fff;
+  padding: 1em;
+  font: $fonts;
+}
+
+.container {
+  max-width: 500px;
+  min-width: 400px;
+}
+
+header, footer {
+  text-align: center;
+}
+
+#photo {
+  margin: 0 auto;
+  width: $photo-dimensions;
+  max-width: $photo-max-dimensions;
+  height: $photo-dimensions;
+  display: block;
+  border: thick solid #fff;
+  border-radius: 500px;
+  box-shadow: 0 0px 8px #06A599;
+}
+
+footer {
+  margin: 2rem 0;
+}
+
+h2 {
+  margin: 2rem 0 1rem;
+}
+
+p, li {
+  line-height: 1.6rem;
+}
+
+ul {
+  margin-top: 0;
+  padding: 0 0 0 1rem;
+}
+
+a, a:visited, a h2 {
+  color: #bbb;
+
+  &:hover {
+    color: #becccb;
+  }
+}

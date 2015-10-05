@@ -2,7 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 
 var fileLoader = function(ext) {
-  if (ext === undefined) {
+  if (!ext) {
     ext = '[ext]';
   }
   return 'file?name=[path][name].' + ext;
@@ -23,7 +23,8 @@ module.exports = {
       { test: /\.scss/, loaders: [fileLoader('css'), 'sass'] },
       { test: /\.css$'/, loaders: ['css'] },
       { test: /\.png$/, loader: 'url-loader?limit=100000' },
-      { test: /\.jpg$/, loader: fileLoader() }
+      { test: /\.jpg$/, loader: fileLoader() },
+      { test: /\.asc/, loader: fileLoader() }
     ]
   },
   resolve: {
