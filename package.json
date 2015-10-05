@@ -1,0 +1,23 @@
+{
+  "name": "ali.io",
+  "version": "1.0.0",
+  "description": "It's a website!",
+  "scripts": {
+    "start": "harp server",
+    "build": "harp compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ali/ali.io.git"
+  },
+  "author": "Ali Ukani <ali.ukani@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ali/ali.io/issues"
+  },
+  "homepage": "https://github.com/ali/ali.io#readme",
+  "dependencies": {
+    "harp": "^0.19.0",
+    "node-sass": "^3.3.3"
+  }
+}
