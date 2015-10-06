@@ -20,14 +20,12 @@ header, footer {
 }
 
 #photo {
-  margin: 0 auto;
   width: $photo-dimensions;
   max-width: $photo-max-dimensions;
   height: $photo-dimensions;
-  display: block;
-  border: thick solid #fff;
+  border: 5px solid #fff;
   border-radius: 500px;
-  box-shadow: 0 0px 8px #06A599;
+  box-shadow: 0 0px 8px #5384CD;
 }
 
 footer {
@@ -43,7 +41,6 @@ p, li {
 }
 
 ul {
-  margin-top: 0;
   padding: 0 0 0 1rem;
 }
 
