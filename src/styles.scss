@@ -3,16 +3,20 @@ $fonts: "proxima-nova-1","proxima-nova-2", 'Helvetica', sans-serif;
 $photo-max-dimensions: 150px;
 $photo-dimensions: 33%;
 
+$brand-color: #5384CD;
+$link-color: #6BC1FF;
+$link-color-hover: darken($link-color, 30%);
+$driftt-blue: #39D5FF;
+
 body {
-  background: #191d1f;
-  color: #fff;
-  padding: 1em;
-  font: $fonts;
+  background: #191D1F;
+  color: #FFF;
+  font: 1.2rem/2rem $fonts;
 }
 
 .container {
-  max-width: 500px;
-  margin: 0 auto;
+  max-width: 400px;
+  margin: 2rem;
 }
 
 header, footer {
@@ -23,9 +27,9 @@ header, footer {
   width: $photo-dimensions;
   max-width: $photo-max-dimensions;
   height: $photo-dimensions;
-  border: 5px solid #fff;
+  border: 5px solid #FFF;
   border-radius: 500px;
-  box-shadow: 0 0px 8px #5384CD;
+  box-shadow: 0 0px 8px $brand-color;
 }
 
 footer {
@@ -36,18 +40,20 @@ h2 {
   margin: 2rem 0 1rem;
 }
 
-p, li {
-  line-height: 1.6rem;
-}
-
 ul {
   padding: 0 0 0 1rem;
 }
 
-a, a:visited, a h2 {
-  color: #bbb;
+a, a:visited {
+  color: $link-color;
+  transition: color 0.5s ease;
 
   &:hover {
-    color: #becccb;
+    color: $link-color-hover;
   }
+}
+
+a.driftt {
+  color: $driftt-blue;
+  font-weight: bold;
 }
