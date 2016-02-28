@@ -6,7 +6,7 @@ $photo-dimensions: 33%;
 $brand-color: #5384CD;
 $link-color: #6BC1FF;
 $link-color-hover: darken($link-color, 30%);
-$driftt-blue: #39D5FF;
+$drift-blue: #39D5FF;
 
 body {
   background: #191D1F;
@@ -53,7 +53,7 @@ a, a:visited {
   }
 }
 
-a.driftt {
-  color: $driftt-blue;
+a.drift {
+  color: $drift-blue;
   font-weight: bold;
 }
