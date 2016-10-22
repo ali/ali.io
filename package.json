@@ -1,15 +1,19 @@
 {
   "name": "ali.io",
-  "version": "2.0.0",
   "description": "It's a website!",
   "scripts": {
     "start": "webpack-dev-server",
+    "now-start": "list ./dist",
     "build": "webpack -p",
-    "test": "webpack"
+    "test": "webpack",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ali/ali.io.git"
+    "url": "https://github.com/ali/ali.io.git"
   },
   "author": "Ali Ukani <ali.ukani@gmail.com>",
   "license": "ISC",
@@ -18,12 +22,16 @@
   },
   "homepage": "https://github.com/ali/ali.io#readme",
   "dependencies": {
+    "list": "latest"
+  },
+  "devDependencies": {
     "file-loader": "^0.8.4",
     "jade": "^1.11.0",
     "jade-html-loader": "0.0.3",
     "node-sass": "^3.3.3",
     "raw-loader": "^0.5.1",
     "sass-loader": "^3.0.0",
+    "semantic-release": "^4.3.5",
     "url-loader": "^0.5.6",
     "webpack": "^1.12.2",
     "webpack-dev-server": "^1.12.0"
