@@ -7,7 +7,7 @@ export const A = ({ href = '#', target = '_blank', children, ...rest }) => (
 )
 
 export const P = ({ children }) => (
-  <p className='.P'>
+  <p className='P'>
     {children}
     <style jsx>
     {`
