@@ -1,5 +1,6 @@
 {
   "name": "ali.io",
+  "version": "1.0.0",
   "description": "site served at ali.io",
   "scripts": {
     "dev": "next",
