@@ -71,7 +71,7 @@ export default class Index extends Component {
         <P>👋🏽</P>
 
         <P>
-          software engineer at <A href="https://www.drift.com">Drift</A>.
+          <A href="https://aliceyoung.xyz">Alice Young</A>’s #1 fan.
         </P>
 
         <Footer>
