@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "start": "next start"
   },
   "repository": {
     "type": "git",
