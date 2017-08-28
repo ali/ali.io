@@ -1,0 +1,21 @@
+dist: trusty
+language: node_js
+node_js:
+- '8'
+cache:
+  directories:
+  - node_modules
+install:
+- npm install -g npm@latest
+- npm install
+script:
+- npm run build
+deploy:
+  provider: script
+  script:
+  - now deploy -t $NOW_TOKEN
+  on:
+    branch: master
+env:
+  global:
+    secure: EHxS7fCVAneYLQfiKXsf/caGtMRv5RrzKN//vPUVwU36g4bCWX+tts0xnqHKoicvd2en4M5slHUTEPWp/29Z3QSv9d9YssffXnuWAJXF34AQSMcRr5pQ/Ascx5K3OPr1PVgnsSTNR1UxYmcg6NIOYcf3HB683f2U4kn1MZyXa74=
