@@ -5,7 +5,8 @@
   "scripts": {
     "start": "serve ./public --single",
     "dev": "gatsby develop",
-    "build": "gatsby build"
+    "build": "gatsby build",
+    "deploy": "now"
   },
   "repository": {
     "type": "git",
