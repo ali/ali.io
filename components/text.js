@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react'
+import React from 'react';
 
 export const A = ({ href = '#', target = '_blank', children, ...rest }) => (
   <a {...rest} href={href} target={target} rel='noopener noreferrer'>

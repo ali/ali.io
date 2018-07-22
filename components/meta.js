@@ -1,11 +1,12 @@
-import Head from 'next/head'
+import React from 'react';
+import Head from 'next/head';
 
 /* global meta tags and styles */
 
 const LINK_COLOR = '#009fd4'
 
 export default () => (
-  <div>
+  <>
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
     </Head>
@@ -36,5 +37,5 @@ export default () => (
         margin-bottom: 1.25rem;
       }
     `}</style>
-  </div>
+  </>
 )
