@@ -1,0 +1,10 @@
+{
+  "alias": "ali.io",
+  "type": "static",
+  "public": false,
+  "files": ["out"],
+  "static": {
+    "public": "out",
+    "directoryListing": false
+  }
+}
