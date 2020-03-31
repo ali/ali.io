@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/ali/ali.io#readme",
   "dependencies": {
-    "next": "^6.1.1",
+    "next": "^9.3.2",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1"
